@@ -14,14 +14,14 @@ public class Jugador {
     private int numero;
 
     @ManyToOne
-    @JoinColumn(name = "equipoSan_id")
+    @JoinColumn(name = "equipo_id")
     private Equipo equipo;
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
 
-    public void setEquipoSan(Equipo equipo) {
+    public void setEquipo(Equipo equipo) {
         this.equipo = equipo;
     }
 
